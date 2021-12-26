@@ -1,6 +1,8 @@
 import Header from './Header';
-import Main from './Main';
+import Home from './Home';
 import Menu from './Menu';
+import Careers from './Careers';
+import Contact from './Contact';
 
 import './App.css';
 
@@ -8,8 +10,10 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Main />
+      <Home />
       <Menu />
+      <Careers />
+      <Contact />
     </div>
   );
 }

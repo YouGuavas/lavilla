@@ -13,7 +13,7 @@ class Header extends React.Component {
     const oldIndex = this.state.activeIndex;
     this.setState({activeIndex: index}, () => {
       if (menuType === 'mobile') {
-        toggleClasses = ['text-white', 'hover:text-white', 'bg-green-500', 'hover:bg-green-500', 'font-semibold', 'transition', 'duration-300'];
+        toggleClasses = ['text-white', 'hover:text-white', 'bg-green-700', 'hover:bg-green-700', 'font-semibold', 'transition', 'duration-300'];
         const active = document.getElementById(`mobileMenu${oldIndex}`);
         const activeA = document.querySelector(`#mobileMenu${oldIndex}>a`);
         const inactive = document.getElementById(`mobileMenu${this.state.activeIndex}`);
@@ -26,7 +26,7 @@ class Header extends React.Component {
           return null;
         });
       } else {
-        toggleClasses = ['text-gray-500', 'text-green-500', 'hover:text-green-500', 'border-b-4', 'border-red-500', 'transition', 'duration-300'];
+        toggleClasses = ['text-gray-500', 'text-green-700', 'hover:text-green-700', 'border-b-4', 'border-red-700', 'transition', 'duration-300'];
         const active = document.getElementById(`bigMenu${oldIndex}`);
         const inactive = document.getElementById(`bigMenu${this.state.activeIndex}`)
         toggleClasses.map((toggleClass) => {
@@ -61,7 +61,7 @@ class Header extends React.Component {
       <div className='flex space-x-7'>
       <div className="hidden md:flex items-center space-x-1">
         {links.map((item, index) => (
-          index === 0 ? <a href='#' key={index} id={`bigMenu${index}`} className="py-4 px-2 text-green-500 border-b-4 border-red-500 font-semibold" onClick={() => {this.handleClick('', item, index)}}>{item}</a> : <a href={`#${item}`} key={index} id={`bigMenu${index}`} className="py-4 px-2 text-gray-500 font-semibold hover:text-green-500 transition duration-300" onClick={() => {this.handleClick('', item, index)}}>{item}</a>
+          index === 0 ? <a href='#' key={index} id={`bigMenu${index}`} className="py-4 px-2 text-green-700 border-b-4 border-red-700 font-semibold" onClick={() => {this.handleClick('', item, index)}}>{item}</a> : <a href={`#${item}`} key={index} id={`bigMenu${index}`} className="py-4 px-2 text-gray-500 font-semibold hover:text-green-700 transition duration-300" onClick={() => {this.handleClick('', item, index)}}>{item}</a>
         ))}
       </div>
       </div>
@@ -82,7 +82,7 @@ class Header extends React.Component {
       <div id="mobile-menu" className="hidden mobile-menu">
         <ul className="">
           {links.map((item, index) => (
-            index === 0 ? <li className="active" key={index} id={`mobileMenu${index}`}><a href="#" className="block text-sm px-2 py-4 text-white bg-green-500 font-semibold" onClick={() => {this.handleClick("mobile", item, index)}}>{item}</a></li> : <li key={index} id={`mobileMenu${index}`}><a href={`#${item}`} className="block text-sm px-2 py-4 hover:bg-green-500 hover:text-white transition duration-300" onClick={() => {this.handleClick("mobile", item, index)}}>{item}</a></li>
+            index === 0 ? <li className="active" key={index} id={`mobileMenu${index}`}><a href="#" className="block text-sm px-2 py-4 text-white bg-green-700 font-semibold" onClick={() => {this.handleClick("mobile", item, index)}}>{item}</a></li> : <li key={index} id={`mobileMenu${index}`}><a href={`#${item}`} className="block text-sm px-2 py-4 hover:bg-green-700 hover:text-white transition duration-300" onClick={() => {this.handleClick("mobile", item, index)}}>{item}</a></li>
           ))}
         </ul>
       </div>
