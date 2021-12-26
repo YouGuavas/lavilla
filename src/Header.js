@@ -35,9 +35,9 @@ class Header extends React.Component {
           return null;
         });
       }
-    })
-    
+    });
   }
+
   handleClick = (menuType='', item='', index=undefined) => {
     //toggle mobile menu
     const btn = document.getElementById("nav-button");
@@ -45,50 +45,51 @@ class Header extends React.Component {
     if (menuType === 'mobile') {
       menu.classList.toggle('hidden');
       btn.classList.toggle('hidden');
-    } 
+    }; 
     if (item.length > 0) {
       this.toggle(menuType, index);
-    }
-    
+    }; 
   }
+
   render(){  
     const links = ["Home", "Menu", "Catering", "Careers", "Contact Us", "Order Delivery"];
 
     return(
     <nav className='sticky top-0 z-50 bg-white shadow-lg'>
-    <div className='max-w-6xl mx-auto px-4'>
-      <div className='flex justify-between'>
-      <div className='flex space-x-7'>
-      <div className="hidden md:flex items-center space-x-1">
-        {links.map((item, index) => (
-          index === 0 ? <a href='#' key={index} id={`bigMenu${index}`} className="py-4 px-2 text-green-700 border-b-4 border-red-700 font-semibold" onClick={() => {this.handleClick('', item, index)}}>{item}</a> : <a href={`#${item}`} key={index} id={`bigMenu${index}`} className="py-4 px-2 text-gray-500 font-semibold hover:text-green-700 transition duration-300" onClick={() => {this.handleClick('', item, index)}}>{item}</a>
-        ))}
-      </div>
-      </div>
-      <div className="md:hidden flex items-center">
-        <button id="nav-button" className="outline-none mobile-menu-button" onClick={() => {this.handleClick("mobile")}}>
-          <svg className="w-6 h-6 text-gray-500"
-            x-show="!showMenu"
-            fill="none"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor">
-            <path d="M4 6h16M4 12h16M4 18h16"></path>
-          </svg>
-        </button>
-      </div>
-      <div id="mobile-menu" className="hidden mobile-menu">
-        <ul className="">
+      <div className='max-w-6xl mx-auto px-4'>
+        <div className='flex justify-between'>
+        <div className='flex space-x-7'>
+        <div className="hidden md:flex items-center space-x-1">
           {links.map((item, index) => (
-            index === 0 ? <li className="active" key={index} id={`mobileMenu${index}`}><a href="#" className="block text-sm px-2 py-4 text-white bg-green-700 font-semibold" onClick={() => {this.handleClick("mobile", item, index)}}>{item}</a></li> : <li key={index} id={`mobileMenu${index}`}><a href={`#${item}`} className="block text-sm px-2 py-4 hover:bg-green-700 hover:text-white transition duration-300" onClick={() => {this.handleClick("mobile", item, index)}}>{item}</a></li>
+            index === 0 ? <a href='#' key={index} id={`bigMenu${index}`} className="py-4 px-2 text-green-700 border-b-4 border-red-700 font-semibold" onClick={() => {this.handleClick('', item, index)}}>{item}</a> : <a href={`#${item}`} key={index} id={`bigMenu${index}`} className="py-4 px-2 text-gray-500 font-semibold hover:text-green-700 transition duration-300" onClick={() => {this.handleClick('', item, index)}}>{item}</a>
           ))}
-        </ul>
+        </div>
+        </div>
+        <div className="md:hidden flex items-center">
+          <button id="nav-button" className="outline-none mobile-menu-button" onClick={() => {this.handleClick("mobile")}}>
+            <svg className="w-6 h-6 text-gray-500"
+              x-show="!showMenu"
+              fill="none"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+        <div id="mobile-menu" className="hidden mobile-menu">
+          <ul className="">
+            {links.map((item, index) => (
+              index === 0 ? <li className="active" key={index} id={`mobileMenu${index}`}><a href="#" className="block text-sm px-2 py-4 text-white bg-green-700 font-semibold" onClick={() => {this.handleClick("mobile", item, index)}}>{item}</a></li> : <li key={index} id={`mobileMenu${index}`}><a href={`#${item}`} className="block text-sm px-2 py-4 hover:bg-green-700 hover:text-white transition duration-300" onClick={() => {this.handleClick("mobile", item, index)}}>{item}</a></li>
+            ))}
+          </ul>
+        </div>
       </div>
     </div>
-  </div>
-</nav>
-);}}
+  </nav>
+  );}
+}
 
 export default Header;
