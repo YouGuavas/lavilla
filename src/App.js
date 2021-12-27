@@ -1,4 +1,7 @@
 import Header from './Header';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
+
 import Home from './Home';
 import Menu from './Menu';
 import Careers from './Careers';
@@ -7,13 +10,18 @@ import Contact from './Contact';
 import './App.css';
 
 function App() {
+  const test = <Home />
   return (
     <div className="App">
         <Header />
-        <Home />
-        <Menu />
-        <Careers />
-        <Contact />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/Menu" element={<Menu />}/>
+            <Route path="/Careers" element={<Careers />}/>
+            <Route path="/Contact%20Us" element={<Contact />}/>
+          </Routes>
+        </BrowserRouter>
       <div className="shadow-lg p-6">
       </div>
       <Footer />

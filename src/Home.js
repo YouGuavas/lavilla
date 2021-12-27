@@ -4,7 +4,7 @@ function Home() {
       <div className="h-screen p-6 row-span-2 text-4xl font-sans grid grid-rows-3">
       <p className="row-span-1">Enjoy Good Food With Good Company</p>
       <p className="row-span-1">Come join our family by visiting La Villa Family Dining & Pizzeria</p>
-      <a href="#Contact Us" className="row-span-1 text-center">Contact Us</a>
+      <a href="/Contact Us" className="row-span-1 text-center">Contact Us</a>
       </div>
       <div className="h-screen grid bg-gray-200 p-6 row-span-2">
       
