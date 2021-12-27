@@ -6,8 +6,8 @@ function Menu() {
   ]
   return(
     <div id="Menu" className="grid gap-y-10 grid-cols-1 place-items-center p-6">
-      {images.map((image) => (
-        <div className="flex justify-center p-6 border-2 border-green-700 bg-red-800"><img src={image} /></div>
+      {images.map((image, index) => (
+        <div key={index} className="flex justify-center p-6 border-2 border-green-700 bg-red-800"><img src={image} alt="Image of restaurant menu" /></div>
       ))}
     </div>
   );
