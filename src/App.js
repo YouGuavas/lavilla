@@ -9,12 +9,12 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <div className="shadow-lg p-6">
         <Header />
         <Home />
         <Menu />
         <Careers />
         <Contact />
+      <div className="shadow-lg p-6">
       </div>
       <Footer />
     </div>

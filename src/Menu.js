@@ -5,7 +5,7 @@ function Menu() {
     "https://lh3.googleusercontent.com/39VYPn2Vr2AQcpGTqPFCn_1pj17mlXS_UtAnjOls8HGQMD6MsPHTQk_7YDhIF1hZJu0bUdHWc82iSZAooT1NkuIi7urlb3ggSTFZgKGgjbgSS3GfLDehvp4fbLsSzgGT-k0IWhKACxU0tiIsQU4KFxwfd1OOzKCtayXBUpfeJDTSJrxKWF5mssSfsxGHVRb0v4uWKOBA4xUGb0RjWGI2DYqERr7meBO9qb5Hp_uRb1vYyst2-mAgXbW1n7v4p3LupkSVc2Mk4mjSgAT-wUDDAirQNZv7OVTUtsQyi7FsrDI7xVK4WcZobmYuo-CyaertajBLpsUuXj1NC49yfkJDE0TVkfr2nRV_zv8yKt_dQPU6D3Rg3Jb1Z08NV_4v8yjHN8RSpWEl-iVMrDZJD_ekwF0Jo3DsKQZ4xbznfcqsa_Qkokjlj-F-1Q_A4i7OqTJso_rLuh7v-vu0uZdKmpUamRVRfLeFVYb69HrAuR3gJo7fmoywoY2FMOupFICw9uG_Ifqmi0CMd_Tbmhh0XJL9xFhtJJ0WHW4ZzeZ99GeITDxMUiwpFVZFUCcntfhtIhZiGpYahFuO5TAVh8Dr8gWBXY0TEK6VGy40mpZcII0_DeE2y1YwxXPsQm49JHGXfs80QMBlnG1rRGnls0ncPGjBMbvbWVGL1nPAMR5c81ACqj9ow7kf9JL8LJSUFIJM9LcH81eU92gTV2rWGGirivXYAEKU=w398-h655-no?authuser=0"
   ]
   return(
-    <div id="Menu" className="grid gap-y-10 grid-cols-1 place-items-center">
+    <div id="Menu" className="grid gap-y-10 grid-cols-1 place-items-center p-6">
       {images.map((image) => (
         <div className="flex justify-center p-6 border-2 border-green-700 bg-red-800"><img src={image} /></div>
       ))}
