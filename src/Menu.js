@@ -7,7 +7,7 @@ function Menu() {
   return(
     <div id="Menu" className="grid gap-y-10 grid-cols-1 place-items-center p-6">
       {images.map((image, index) => (
-        <div key={index} className="flex justify-center p-6 border-2 border-green-700 bg-red-800"><img src={image} alt="Image of restaurant menu" /></div>
+        <div key={index} className="flex justify-center p-6 border-2 border-green-700 bg-red-800 h-screen"><img src={image} className="h-full w-full" alt="Image of restaurant menu" /></div>
       ))}
     </div>
   );
