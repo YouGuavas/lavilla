@@ -1,3 +1,4 @@
+import { SRLWrapper } from "simple-react-lightbox";
 
 function Menu() {
   const images = [
@@ -7,7 +8,11 @@ function Menu() {
   return(
     <div id="Menu" className="grid gap-y-10 grid-cols-1 place-items-center p-6">
       {images.map((image, index) => (
-        <div key={index} className="flex justify-center p-6 border-2 border-green-700 bg-red-800 h-screen"><img src={image} className="h-full w-full" alt="Image of restaurant menu" /></div>
+        <SRLWrapper>
+          <a className="flex justify-center p-6 border-2 border-green-700 bg-red-800 h-screen" href={image} >
+          <img src={image} className="h-full w-full" alt="Image of restaurant menu" />
+          </a>
+        </SRLWrapper>
       ))}
     </div>
   );

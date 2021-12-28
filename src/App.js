@@ -1,11 +1,12 @@
 import Header from './Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-
 import Home from './Home';
 import Menu from './Menu';
 import Careers from './Careers';
 import Contact from './Contact';
+import Catering from './Catering';
+import Order from './Order';
 
 import './App.css';
 
@@ -18,8 +19,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/Menu" element={<Menu />}/>
+            <Route path="Catering" element={<Catering />}/>
             <Route path="/Careers" element={<Careers />}/>
             <Route path="/Contact%20Us" element={<Contact />}/>
+            <Route path="/Order%20Delivery" element={<Order />}/>
           </Routes>
         </BrowserRouter>
       <div className="shadow-lg p-6">
