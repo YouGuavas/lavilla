@@ -13,21 +13,31 @@ class Header extends React.Component {
     let myhref = "/"+item;
     let activeStyle = "py-4 px-2 text-green-700 border-b-4 border-red-700 font-semibold";
     let normalStyle = "py-4 px-2 text-gray-500 font-semibold hover:text-green-700 transition duration-300";
+    let menuType = '';
     if (myhref === "/Home") {
       myhref = "/"
     }
     if (style === "mobile") {
+      menuType = 'mobile';
       activeStyle = "block text-sm px-2 py-4 text-white bg-green-700 font-semibold";
       normalStyle = "block text-sm px-2 py-4 hover:bg-green-700 hover:text-white transition duration-300";
     }
+    const activeLink = <a href={myhref} key={index} className={activeStyle} onClick={() => {this.handleClick({menuType}, item, index)}}>{item}</a>;
+    const inactiveLink = <a href={myhref} key={index} className={normalStyle} onClick={() => {this.handleClick({menuType}, item, index)}}>{item}</a>;
+
     if (this.state.active === "/") {
       if (item === "Home") {
-        return <a href={myhref} key={index} id={`bigMenu${index}`} className={activeStyle} onClick={() => {this.handleClick('', item, index)}}>{item}</a>
-      } else {return <a href={myhref} key={index} id={`bigMenu${index}`} className={normalStyle} onClick={() => {this.handleClick('', item, index)}}>{item}</a>}
-    } else if ("/"+item === this.state.active){
-      return <a href={myhref} key={index} id={`bigMenu${index}`} className={activeStyle} onClick={() => {this.handleClick('', item, index)}}>{item}</a>
+        return activeLink;
+      } else { return inactiveLink;}
+    } else if (item.indexOf(' ') >= 0) {
+      if ("/"+item.replace(' ', '%20') === this.state.active) {
+        return activeLink;
+      } else {return inactiveLink;}
+    }
+    else if ("/"+item === this.state.active){
+      return activeLink;
     } else {
-      return <a href={myhref} key={index} id={`bigMenu${index}`} className={normalStyle} onClick={() => {this.handleClick('', item, index)}}>{item}</a>
+      return inactiveLink;
     }
   }
 
