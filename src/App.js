@@ -25,8 +25,6 @@ function App() {
             <Route path="/Order%20Delivery" element={<Order />}/>
           </Routes>
         </BrowserRouter>
-      <div className="shadow-lg p-6">
-      </div>
       <Footer />
     </div>
   );

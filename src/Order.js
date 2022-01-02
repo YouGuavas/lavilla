@@ -1,5 +1,5 @@
 export default function Order() {
   return (
-    <div>Order</div>
+    <div className="shadow-md">Order</div>
   )
 }

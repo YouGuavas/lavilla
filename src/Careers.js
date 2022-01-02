@@ -1,6 +1,6 @@
 function Careers() {
   return(
-  <div id="Careers">
+  <div className="shadow-md">
     Careers
   </div>
   );

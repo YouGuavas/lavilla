@@ -1,7 +1,8 @@
 function Contact() {
   const asterisk = <span className="text-red-800">*</span>;
+  const labelClass = "block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2";
   return(
-  <div id="Contact Us" className="grid grid-cols-5 p-6">
+  <div id="Contact Us" className="grid grid-cols-5 p-6 shadow-md">
     <div className="p-6 text-center bg-gray-200 col-span-4">
       <p className="font-fancy text-2xl p-3">Find Italian Food in Mt Morris, MI</p>
       <p className="text-red-800 font-sans p-3">Visit La Villa Family Dining & Pizzeria today</p>
@@ -11,28 +12,53 @@ function Contact() {
     </div>
     {/* Contact Form */}
     <div className="col-span-5 p-6">
-      Contact Us
       <form className="w-full max-w-lg">
         <div className="flex flex-wrap">
+          <div className="w-full px-3">
+          <label className={labelClass}>
+            Contact Us
+          </label>
+          </div>
+        </div>
+        <div className="flex flex-wrap">
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+            <label className={labelClass} for="grid-first-name">
               First Name{asterisk}
             </label>
             <input className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Jane" /><p></p>
           </div>
           <div className="w-full md:w-1/2 px-3 mb-6 md:mb-0">
-            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-last-name">
+            <label className={labelClass} for="grid-last-name">
               Last Name{asterisk}
             </label>
             <input className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-last-name" type="text" placeholder="Doe" /><p></p>
           </div>
         </div>
         <div className="flex flex-wrap">
-          <div class="w-full px-3">
-            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
+          <div className="w-full px-3">
+            <label className={labelClass} for="grid-phone-number">
               Phone{asterisk}
             </label>
-            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-phone-number" type="text" placeholder="(555) 555-5555"/>
+            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-phone-number" type="text" placeholder="(555) 555-5555"/><p></p>
+          </div>
+        </div>
+        <div className="flex flex-wrap">
+          <div className="w-full px-3">
+            <label className={labelClass} for="grid-email">
+              Email{asterisk}
+            </label>
+            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-email" type="text" placeholder="john.doe@example.com" />
+            <p id="p-email"></p>
+          </div>
+        </div>
+        <div className="flex flex-wrap">
+          <div className="w-full px-3">
+            <label className={labelClass} for="grid-message">
+              Message/Suggestions{asterisk}
+            </label>
+            <textarea id="grid-message "style={{resize: "none"}} className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white">
+            </textarea>
+            <p id="p-message"></p>
           </div>
         </div>
       </form>

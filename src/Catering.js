@@ -1,5 +1,5 @@
 export default function Catering() {
   return (
-    <div>Catering</div>
+    <div className="shadow-md">Catering</div>
   )
 }

@@ -1,6 +1,6 @@
 function Home() {
   return(
-    <div id="Home" className="grid place-items-center shadow-md">
+    <div className="grid place-items-center shadow-md">
       <section className="h-screen p-6 row-span-2 text-4xl font-sans grid grid-rows-3 grid-cols-3">
         <p className="row-span-1 col-span-3">Enjoy Good Food With Good Company</p>
         <p className="row-span-1 col-span-3">Come join our family by visiting La Villa Family Dining & Pizzeria</p>

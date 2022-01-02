@@ -7,11 +7,11 @@ function Menu() {
   ]
   
   return(
-    <div id="Menu" className="grid gap-y-10 place-items-center p-6">
+    <div className="grid gap-y-10 place-items-center p-6 shadow-md bg-red-800">
       {images.map((image, index) => (
         <div key={index}>
         <SRLWrapper>
-          <a className="flex justify-center p-6 border-2 border-green-700 bg-red-800 h-screen" href={image} >
+          <a className="flex justify-center p-6 border-2 border-white bg-green-700 h-screen" href={image} >
           <img src={image} alt="Image of restaurant menu" />
           </a>
         </SRLWrapper>
