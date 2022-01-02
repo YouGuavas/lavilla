@@ -17,6 +17,9 @@ class Header extends React.Component {
     if (myhref === "/Home") {
       myhref = "/"
     }
+    if (item.indexOf("Order") >= 0) {
+      myhref="https://slicelife.com/restaurants/mi/mt-morris/48458/la-villa-family-dining-pizzeria/menu?utm_campaign=order_now_button&utm_medium=referral&utm_source=lavilla-pizzeria.com"
+    }
     if (style === "mobile") {
       menuType = 'mobile';
       activeStyle = "block text-sm px-2 py-4 text-white bg-green-700 font-semibold";
