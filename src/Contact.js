@@ -56,9 +56,20 @@ function Contact() {
             <label className={labelClass} for="grid-message">
               Message/Suggestions{asterisk}
             </label>
-            <textarea id="grid-message "style={{resize: "none"}} className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white">
+            <textarea rows="4" id="grid-message "style={{resize: "none"}} className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" placeholder="Please leave any messages, suggestions, or comments here!">
             </textarea>
             <p id="p-message"></p>
+          </div>
+        </div>
+        <div className="flex flex-wrap">
+          <div className="w-full md:w-1/2 px-3">
+            <label className={labelClass} for="grid-security">
+              Security Check{asterisk}
+            </label>
+            <input className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-security" type="number"/>
+          </div>
+          <div className="w-full md:w-1/2 md:pt-6 px-3">
+            <button type="submit" className="w-full font-semibold bg-gray-300 text-gray-700 border border-1 border-gray-500 rounded py-3 px-4 mb-3 leading-tight">Submit</button>
           </div>
         </div>
       </form>
