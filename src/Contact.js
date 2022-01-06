@@ -1,6 +1,17 @@
+import React from "react";
+
 function Contact() {
   const asterisk = <span className="text-red-800">*</span>;
   const labelClass = "block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2";
+  let numOne = Math.ceil(Math.random() * 10);
+  let numTwo = Math.ceil(Math.random() * 10);
+  const securityCheck = (value, a = numOne, b = numTwo) => {
+    const sum = a + b;
+    alert(value);
+  }
+  const handleSubmit = (value) => {
+    securityCheck(value);
+  }
   return(
   <div id="Contact Us" className="grid grid-cols-5 p-6 shadow-md">
     <div className="p-6 text-center bg-gray-200 col-span-4">
@@ -64,7 +75,7 @@ function Contact() {
         <div className="flex flex-wrap">
           <div className="w-full md:w-1/2 px-3">
             <label className={labelClass} for="grid-security">
-              Security Check{asterisk}
+              Security Check{asterisk} {numOne} + {numTwo}
             </label>
             <input className="appearance-none block w-full bg-gray-200 text-gray-700 border rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-security" type="number"/>
           </div>
