@@ -1,13 +1,13 @@
 function Home() {
   return(
-    <div className="grid place-items-center shadow-md bg-breadsticks bg-fixed bg-cover bg-center">
+    <div className="grid place-items-center shadow-md bg-lasagna bg-fixed bg-cover bg-center">
       <section className="h-screen w-full p-6 row-span-2 text-4xl font-sans grid grid-rows-3 grid-cols-3 bg-white bg-opacity-20">
         <p className="row-span-1 col-span-3">Enjoy Good Food With Good Company</p>
         <p className="row-span-1 col-span-3">Come join our family by visiting La Villa Family Dining & Pizzeria</p>
         <a href="/Contact Us" className="row-span-1 text-center bg-red-800 bg-opacity-90 border border-gray-200 text-gray-200 rounded md:col-start-2 md:col-end-3 col-span-3 grid place-items-center justify-center hover:scale-x-110">Contact Us</a>
       </section>
 
-      <section className="h-screen grid bg-gray-200 p-6 row-span-2">
+      <section className="h-screen grid bg-green-900 bg-opacity-90 text-gray-200 p-6 row-span-2">
         <p className="font-fancy text-2xl font-thin text-center">What's for Dinner?</p>
         <p className="text-center text-2xl font-bold">FIND OUT AT YOUR FAVORITE MT MORRIS, MI PIZZA RESTAURANT</p>
         <p className="text-center font-mono text-sm">
@@ -26,7 +26,7 @@ function Home() {
         </p>
         </section>
 
-        <section className="h-screen grid grid-cols-2 gap-2 p-6">
+        <section className="h-screen grid grid-cols-2 gap-2 p-6 bg-white bg-opacity-90 w-full">
           <div className="md:col-span-1 col-span-2">
             <h2>your local source for traditional italian cuisine</h2>
             <p>visit our reopened family restaurant in mt morris, mi</p>
@@ -51,7 +51,7 @@ function Home() {
           </div>
         </section>
 
-        <section className="h-screen grid grid-rows-2 p-6">
+        <section className="h-screen grid grid-rows-2 p-6 w-full bg-red-800 bg-opacity-90 text-gray-200">
           <div className="row-span-1 grid grid-cols-2">
             <div className="md:col-span-1 col-span-2">Honoring the rich history of our restaurant</div>
             <div className="md:col-span-1 col-span-2">
