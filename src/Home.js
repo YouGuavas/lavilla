@@ -1,10 +1,10 @@
 function Home() {
   return(
-    <div className="grid place-items-center shadow-md">
-      <section className="h-screen p-6 row-span-2 text-4xl font-sans grid grid-rows-3 grid-cols-3">
+    <div className="grid place-items-center shadow-md bg-breadsticks bg-fixed bg-cover bg-center">
+      <section className="h-screen w-full p-6 row-span-2 text-4xl font-sans grid grid-rows-3 grid-cols-3 bg-white bg-opacity-20">
         <p className="row-span-1 col-span-3">Enjoy Good Food With Good Company</p>
         <p className="row-span-1 col-span-3">Come join our family by visiting La Villa Family Dining & Pizzeria</p>
-        <a href="/Contact Us" className="row-span-1 text-center border-gray-300 border md:col-start-2 md:col-end-3 col-span-3 grid place-items-center justify-center hover:scale-x-110">Contact Us</a>
+        <a href="/Contact Us" className="row-span-1 text-center bg-red-800 bg-opacity-90 border border-gray-200 text-gray-200 rounded md:col-start-2 md:col-end-3 col-span-3 grid place-items-center justify-center hover:scale-x-110">Contact Us</a>
       </section>
 
       <section className="h-screen grid bg-gray-200 p-6 row-span-2">

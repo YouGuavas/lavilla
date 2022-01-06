@@ -75,26 +75,40 @@ function Contact() {
       </form>
     </div>
     {/*End of contact form*/}
-    <div className="h-screen grid grid-cols-2">
-      <div className="col-span-1">
-        La Villa Family Dining & Pizzeria
-        8372 N Saginaw Road
-        Mt Morris, MI 48458
+    <div className="h-screen grid grid-cols-2 grid-rows-2 col-span-5 gap-2">
+      <div className="md:col-span-1 md:row-span-2 text-center col-span-2 grid grid-cols-2 md:grid-rows-3 grid-rows-4 bg-red-800 text-white p-6 w-full h-full">
+        <div className="md:col-span-2 col-span-1 row-span-2 md:row-span-1">
+          <h6 className="font-bold">La Villa Family Dining & Pizzeria</h6>
+          <p>8372 N Saginaw Road</p>
+          <p>Mt Morris, MI 48458</p>
+        </div>
+        <div className="md:col-span-2 col-span-1 row-span-4 md:hidden">
+          <h7 className="font-semibold">HOURS</h7>
+          <p>Mon: 11:00AM-9:00PM</p>
+          <p>Tue: 11:00AM-9:00PM</p>
+          <p>Wed: 11:00AM-9:00PM</p>
+          <p>Thu: 11:00AM-9:00PM</p>
+          <p>Fri: 11:00AM-9:00PM</p>
+          <p>Sat: 11:00AM-9:00PM</p>
+          <p>Sun: 12:00PM-8:00PM</p>
+        </div>
 
-
-        CALL US
-        Phone: (810) 686-0107
-
-        HOURS
-        Mon: 11:00AM-9:00PM
-        Tue: 11:00AM-9:00PM
-        Wed: 11:00AM-9:00PM
-        Thu: 11:00AM-9:00PM
-        Fri: 11:00AM-9:00PM
-        Sat: 11:00AM-9:00PM
-        Sun: 12:00PM-8:00PM
+        <div className="md:col-span-2 col-span-1 row-span-2 md:row-span-1">
+          <h8 className="font-semibold">CALL US</h8>
+          <p>Phone: (810) 686-0107</p>
+        </div>
+        <div className="md:col-span-2 col-span-1 hidden md:block md:row-span-1">
+          <h7 className="font-semibold">HOURS</h7>
+          <p>Mon: 11:00AM-9:00PM</p>
+          <p>Tue: 11:00AM-9:00PM</p>
+          <p>Wed: 11:00AM-9:00PM</p>
+          <p>Thu: 11:00AM-9:00PM</p>
+          <p>Fri: 11:00AM-9:00PM</p>
+          <p>Sat: 11:00AM-9:00PM</p>
+          <p>Sun: 12:00PM-8:00PM</p>
+        </div>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.8082215932764!2d-83.69609114927391!3d43.12955477904035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882385c68873d049%3A0x26f4fd8b513c2810!2sLa%20Villa%20Family%20Dining%20%26%20Pizzeria!5e0!3m2!1sen!2sus!4v1641164900337!5m2!1sen!2sus" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
+      <iframe className="md:col-span-1 md:row-span-2 col-span-2 w-full h-full md:h-3/4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.8082215932764!2d-83.69609114927391!3d43.12955477904035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882385c68873d049%3A0x26f4fd8b513c2810!2sLa%20Villa%20Family%20Dining%20%26%20Pizzeria!5e0!3m2!1sen!2sus!4v1641164900337!5m2!1sen!2sus" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
     </div>
   </div>
   );
