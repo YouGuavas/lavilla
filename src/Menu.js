@@ -7,7 +7,7 @@ function Menu() {
   ]
   
   return(
-    <div className="grid gap-y-10 place-items-center p-6 shadow-md bg-red-800">
+    <div className="grid gap-y-10 place-items-center p-6 pt-20 shadow-md bg-red-800">
       {images.map((image, index) => (
         <div key={index}>
         <SRLWrapper>

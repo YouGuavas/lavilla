@@ -19,8 +19,8 @@ function Home() {
     2: <section className="h-screen flex place-items-center p-6 pt-20">
       <div className="px-2 text-xl" onClick={prevDiv}>{"<"}</div>
       <div className="px-20">
-        <p>Enjoy Good Food With Good Company</p>
-        <p>
+        <p className="text-5xl py-6 font-semibold text-red-900">Enjoy Good Food With Good Company</p>
+        <p className="text-2xl py-6 font-semibold">
         Come join our family by visiting La Villa Family Dining & Pizzeria
         </p>
         Contact Us
