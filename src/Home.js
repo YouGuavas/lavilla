@@ -28,7 +28,7 @@ function Home() {
       <div className="px-2 text-xl" onClick={nextDiv}>{">"}</div>
     </section>,
 
-    3: <section className="h-screen flex place-items-center bg-green-900 bg-opacity-90 text-gray-200 p-6 pt-20">
+    3: <section className="h-screen flex place-items-center bg-green-900 bg-opacity-20 text-gray-200 p-6 pt-20">
         <div onClick={prevDiv} className="px-2 text-xl">{"<"}</div>
         <div className="grid">
         <p className="font-fancy text-2xl font-thin text-center">What's for Dinner?</p>
@@ -51,7 +51,7 @@ function Home() {
         <div className="px-2 text-xl" onClick={nextDiv}>{">"}</div>
     </section>,
 
-    4: <section className="h-screen flex place-items-center p-6 pt-20 bg-white bg-opacity-90">
+    4: <section className="h-screen flex place-items-center p-6 pt-20 bg-white bg-opacity-20">
       <div onClick={prevDiv}>{"<"}</div>
       <div className="grid grid-cols-2 gap-2">
         <div className="md:col-span-1 col-span-2 h-full">
@@ -81,7 +81,7 @@ function Home() {
       <div onClick={nextDiv}>{">"}</div>
   </section>,
 
-    5: <section className="h-screen flex place-items-center p-6 pt-20 bg-red-800 bg-opacity-90 text-gray-200">
+    5: <section className="h-screen flex place-items-center p-6 pt-20 bg-red-800 bg-opacity-20 text-gray-200">
     <div onClick={prevDiv}>{"<"}</div>
       <div className="grid grid-rows-2">
       <div className="row-span-1 grid grid-cols-2 place-items-center h-full">
