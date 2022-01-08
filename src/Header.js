@@ -12,7 +12,7 @@ class Header extends React.Component {
     //toggle active nav item
     let myhref = "/"+item;
     let activeStyle = "py-4 px-2 text-green-700 border-b-4 border-red-700 font-semibold";
-    let normalStyle = "py-4 px-2 text-gray-500 font-semibold hover:text-green-700 transition duration-300";
+    let normalStyle = "py-4 px-2 text-white font-semibold hover:text-green-700 transition duration-300";
     let menuType = '';
     if (myhref === "/Home") {
       myhref = "/"
@@ -64,7 +64,7 @@ class Header extends React.Component {
     const links = ["Home", "Menu", "Catering", "Careers", "Contact Us", "Order Delivery"];
     const logo = "https://lh3.googleusercontent.com/a1ZPmZbVyg6778udNK53bDi8yi-CJkygGErxRyDJasEHTSeh66H0IPT9SBIKzX369igiFPaDa-a6HaPWBZSH_P9TEozLkcTTAUSJcBw3XKxl3N6vXxG2hqOFuy6RcG0CPCLzAoR4_cv6KO9v2pDJVFiRiIvUpJMb6PiiFSx-GAwkUM_Ww7EaD43MhPMhSftW6bEVbZIJlX5DZjLU4l0y07d8tFjFu6H5jYtHWHzJI7wEcT8bi-RJ1ofKt8X_vJ9BgcGX_gMRLRe3sS5pWQDDwFdM5FA-YfkCSdJPS6INDoRbV1gtOCUb2Bo61mbnETQIyFNtVo91LAPS-nyajP-h9uxXEuecBMTPCMYyptGzKQFf1ARiT_jVebFj0Uurmr6Ugobs8z74AGtaMRc3-ZnJWRKM3mh06IocsRfVlveHTqPT_N-2qquKG7ACTVbaYnY8OnMHt5FO91_i77nPBWp2kbtEIXgQnqkSibUuvLk5W3OBe3AVQBgng5diLCqMIQOLGwz0OokdI4iPgDibORootZNwT6kvKjdGDKh06XSdQKyXAMJQBaq2ZAOyXAGEtfaxXmH5lRIhn7erV9iQoO4AEWUHgWo50D07zyRiMti_ec4f3yD4YbYIDh_atq65fZXHU7LUd7On2nuBtggqNeX5OPIh-Can5uZymSwgu1TwKbrPpfgYw4eK_ttpxMW87F8byChR8HQjxSCoOovPTi7MvzHm=w119-h80-no?authuser=0"
     return(
-    <nav className='sticky top-0 z-50 bg-white bg-opacity-95 shadow-lg flex justify-between px-10'>
+    <nav className='sticky bg-opacity-0 top-0 z-50 bg-white flex justify-between px-20'>
           <div>
             <a href="/" className="flex items-center">
                 <span className="">
