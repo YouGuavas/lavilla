@@ -1,17 +1,28 @@
 import React, {useState} from 'react';
 import Highlight from './Highlight';
 function Home() {
+  
   const [divNumber, setDivNumber] = useState(1);
-  const pointerStyles = "px-2 text-5xl text-red-900 hover:cursor-pointer font-thin scale-y-150 hover:scale-x-110"
+  const pointerStyles = "px-2 text-5xl text-red-900 hover:cursor-pointer font-thin scale-y-150 hover:scale-x-110";
+  
+  
   const nextDiv = () => {
     const divLength = Object.keys(divs).length;
-    (divNumber >= divLength) ? setDivNumber(1) : setDivNumber(divNumber + 1)
+    (divNumber >= divLength) ? setDivNumber(1) : setDivNumber(divNumber + 1);
+    /* if the current div is the last, then go back to the first, 
+    else go to next div */
   }
+
+
   const prevDiv = () => {
     const divLength = Object.keys(divs).length;
-    (divNumber <= 1) ? setDivNumber(divLength) : setDivNumber(divNumber - 1)
+    (divNumber <= 1) ? setDivNumber(divLength) : setDivNumber(divNumber - 1);
+    /* if the current div is the first, then go to the last,
+    else go to previous div */
   }
-  const dots = [1, 2, 3, 4, 5]
+  
+  //define carousel
+  const dots = [1, 2, 3, 4, 5];
   const divs = {
     1:  <section className="h-screen w-full p-6 pt-20 place-items-center">
           <div className="h-full w-full flex place-items-center justify-center">
