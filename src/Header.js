@@ -12,7 +12,7 @@ class Header extends React.Component {
     //toggle active nav item
     let myhref = "/"+item;
     let activeStyle = "py-4 px-2 text-green-700 border-b-4 border-red-700 font-semibold";
-    let normalStyle = "py-4 px-2 text-white font-semibold hover:text-green-700 transition duration-300";
+    let normalStyle = "py-4 px-2 text-gray-700 font-semibold hover:text-green-700 transition duration-300";
     let menuType = '';
     if (myhref === "/Home") {
       myhref = "/"

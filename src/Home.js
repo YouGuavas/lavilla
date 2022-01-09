@@ -164,7 +164,7 @@ function Home() {
   }
 
   return(
-    <div className="grid place-items-center shadow-md bg-lasagna bg-fixed bg-cover bg-center">
+    <div className="grid place-items-center shadow-md bg-breadsticks bg-fixed bg-cover bg-center">
       {
       divs[divNumber]
       }
