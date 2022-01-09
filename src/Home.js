@@ -24,7 +24,7 @@ function Home() {
   //define carousel
   const dots = [1, 2, 3, 4, 5];
   const divs = {
-    1:  <section className="h-screen w-full p-6 pt-20 place-items-center">
+    1:  <div className="h-screen w-full p-6 pt-20 place-items-center">
           <div className="h-full w-full flex place-items-center justify-center">
             <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
             <div className="md:px-32 px-10 h-full w-full flex justify-center text-center place-items-center">
@@ -33,9 +33,9 @@ function Home() {
             <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
           </div>
           <Highlight dots={dots} number={1}/>
-        </section>,
+        </div>,
 
-    2: <section className="h-screen w-full bg-white bg-opacity-20 p-6 pt-20">
+    2: <div className="h-screen w-full bg-white bg-opacity-20 p-6 pt-20">
         <div className="h-full w-full flex place-items-center content-center justify-center">
           <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
           <div className="md:px-20 px-10 h-3/4 w-full grid grid-rows-3 grid-cols-4">
@@ -50,9 +50,9 @@ function Home() {
           <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
         </div>
         <Highlight dots={dots} number={2}/>
-      </section>,
+      </div>,
 
-    3: <section className="h-screen w-full bg-white bg-opacity-20 p-6 pt-20">
+    3: <div className="h-screen w-full bg-white bg-opacity-20 p-6 pt-20">
         <div className="h-full flex place-items-center">
           <div onClick={prevDiv} className={pointerStyles}>{"<"}</div>
           <div className="grid p-6 h-full bg-white bg-opacity-70">
@@ -76,9 +76,9 @@ function Home() {
           <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
         </div>
         <Highlight dots={dots} number={3}/>
-      </section>,
+      </div>,
 
-    4: <section className="h-screen w-full p-6 pt-20 bg-white bg-opacity-20">
+    4: <div className="h-screen w-full p-6 pt-20 bg-white bg-opacity-20">
         <div className="h-full flex place-items-center">
           <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
           <div className="grid h-full grid-cols-2 grid-rows-2">
@@ -119,9 +119,9 @@ function Home() {
           <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
         </div>
         <Highlight dots={dots} number={4}/>
-      </section>,
+      </div>,
 
-    5: <section className="h-screen w-full p-6 pt-20 bg-white bg-opacity-20">
+    5: <div className="h-screen w-full p-6 pt-20 bg-white bg-opacity-20">
         <div className="h-full flex place-items-center">
           <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
           <div className="grid grid-rows-2 h-full md:gap-2 place-items-center">
@@ -158,7 +158,7 @@ function Home() {
           <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
         </div>
         <Highlight dots={dots} number={5}/>
-      </section>
+      </div>
   }
 
   return(
