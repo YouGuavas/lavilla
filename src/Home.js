@@ -17,7 +17,7 @@ function Home() {
           <div className="h-full w-full flex place-items-center justify-center">
             <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
             <div className="md:px-32 px-10 h-full w-full flex justify-center text-center place-items-center">
-            <h1 className="w-full font-fancy md:text-5xl text-3xl text-red-900">La Villa Family Dining & Pizzeria</h1>
+            <h1 className="bg-white bg-opacity-70 p-2 rounded-full w-full font-fancy md:text-5xl text-3xl text-red-900">La Villa Family Dining & Pizzeria</h1>
             </div>
             <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
           </div>
@@ -75,25 +75,33 @@ function Home() {
               <div className="grid grid-cols-1 grid-rows-3 place-items-center">
                 <h2 className="font-semibold md:text-3xl text-2xl row-span-1 col-span-1">Your local source for traditional Italian cuisine</h2>
                 <p className="col-span-1 row-span-1 md:text-lg">Visit our reopened family restaurant in Mt. Morris, MI</p>
-                <a href="/Contact Us" className="row-span-1 py-6 md:h-full md:text-xl w-3/4 col-span-1 text-center bg-red-800 bg-opacity-90 border border-gray-200 text-white rounded grid place-items-center justify-center hover:scale-x-110">Contact Us</a>
+                <a href="/Contact Us" className="row-span-1 py-6 md:h-full md:text-xl w-3/4 col-span-1 text-center bg-red-900 bg-opacity-90 border border-gray-200 text-white rounded grid place-items-center justify-center hover:scale-x-110">Contact Us</a>
               </div>
             </div>
             <div className="md:row-span-2 row-span-1 md:col-span-1 col-span-2 md:h-full h-1/2 grid grid-rows-3 gap-2 place-items-center">
               <div className="md:row-start-2 md:h-full h-1/2 row-span-1 grid">
-                <div className="bg-green-600 bg-opacity-90 hover:scale-x-110 text-white p-6">
-                <p>Italian specialties  ⤑</p>
-                <p>Revel in our expansive menu of authentic dishes.</p>
-                </div>
-                <div className="hover:scale-x-110 bg-opacity-90 p-6">
-                <p>Sandwiches & more  ⤑</p>
-                <p>Find what you crave.</p>
-                </div>
-                <a href="/Catering">
-                <div className="bg-red-700 hover:scale-x-110 bg-opacity-90 text-white p-6">
-                <p>Catering & events  ⤑</p>
-                <p>Let our staff help with your next big event.</p>
-                </div>
+                
+                <a href="/Italian specialties">
+                  <div className="bg-green-700 bg-opacity-90 hover:scale-x-110 text-white p-6">
+                    <p>Italian specialties  ⤑</p>
+                    <p>Revel in our expansive menu of authentic dishes.</p>
+                  </div>
                 </a>
+
+                <a href="/Sandwiches">
+                  <div className="hover:scale-x-110 bg-opacity-90 p-6">
+                    <p>Sandwiches & more  ⤑</p>
+                    <p>Find what you crave.</p>
+                  </div>
+                </a>
+
+                <a href="/Catering">
+                  <div className="bg-red-900 hover:scale-x-110 bg-opacity-90 text-white p-6">
+                    <p>Catering & events  ⤑</p>
+                    <p>Let our staff help with your next big event.</p>
+                  </div>
+                </a>
+
               </div>
             </div>
           </div>
