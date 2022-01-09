@@ -1,37 +1,62 @@
 import { SRLWrapper } from "simple-react-lightbox";
 import React, {useState} from "react";
+import menu1 from "./images/Menu1.jpg";
+import menu2 from "./images/Menu2.jpg";
 
 function Menu() {
 
   const [divNumber, setDivNumber] = useState(1);
   //div numbers with useState hook
-
+  const pointerStyles = "px-2 text-5xl text-red-900 hover:cursor-pointer font-thin scale-y-150 hover:scale-x-110";
   const images = [
-    "https://lh3.googleusercontent.com/pw/AM-JKLU--pWeYN-67_TS_dLiFzfbCsOat0KsIumS7NmE8W1b_VGQFal4A--G0-KuO6wZEuRcrhrcmTfVslAZg6CpfbsNGIkeC69uSaIZYITRfG1WAObTdN2ENA0p_6vsnlRly-yHsfI3jsJYSSiJ40se4uvt=w405-h666-no?authuser=0",
-    "https://lh3.googleusercontent.com/39VYPn2Vr2AQcpGTqPFCn_1pj17mlXS_UtAnjOls8HGQMD6MsPHTQk_7YDhIF1hZJu0bUdHWc82iSZAooT1NkuIi7urlb3ggSTFZgKGgjbgSS3GfLDehvp4fbLsSzgGT-k0IWhKACxU0tiIsQU4KFxwfd1OOzKCtayXBUpfeJDTSJrxKWF5mssSfsxGHVRb0v4uWKOBA4xUGb0RjWGI2DYqERr7meBO9qb5Hp_uRb1vYyst2-mAgXbW1n7v4p3LupkSVc2Mk4mjSgAT-wUDDAirQNZv7OVTUtsQyi7FsrDI7xVK4WcZobmYuo-CyaertajBLpsUuXj1NC49yfkJDE0TVkfr2nRV_zv8yKt_dQPU6D3Rg3Jb1Z08NV_4v8yjHN8RSpWEl-iVMrDZJD_ekwF0Jo3DsKQZ4xbznfcqsa_Qkokjlj-F-1Q_A4i7OqTJso_rLuh7v-vu0uZdKmpUamRVRfLeFVYb69HrAuR3gJo7fmoywoY2FMOupFICw9uG_Ifqmi0CMd_Tbmhh0XJL9xFhtJJ0WHW4ZzeZ99GeITDxMUiwpFVZFUCcntfhtIhZiGpYahFuO5TAVh8Dr8gWBXY0TEK6VGy40mpZcII0_DeE2y1YwxXPsQm49JHGXfs80QMBlnG1rRGnls0ncPGjBMbvbWVGL1nPAMR5c81ACqj9ow7kf9JL8LJSUFIJM9LcH81eU92gTV2rWGGirivXYAEKU=w398-h655-no?authuser=0"
-  ]
+    menu1,
+    menu2
+    ]
+
+  const nextDiv = () => {
+    const divLength = Object.keys(divs).length;
+    (divNumber >= divLength) ? setDivNumber(1) : setDivNumber(divNumber + 1);
+    /* if the current div is the last, then go back to the first, 
+    else go to next div */
+  }
+
+
+  const prevDiv = () => {
+    const divLength = Object.keys(divs).length;
+    (divNumber <= 1) ? setDivNumber(divLength) : setDivNumber(divNumber - 1);
+    /* if the current div is the first, then go to the last,
+    else go to previous div */
+  }
 
   const divs = {
-    1:<div className="grid gap-y-10 h-full w-full place-items-center p-6 pt-20">
+    1:
+    <div className="grid gap-y-10 h-full w-full place-items-center p-6 pt-20">
         {images.map((image, index) => (
           <div key={index}>
           <SRLWrapper>
-            <a className="flex justify-center p-6 border-2 border-white bg-green-700" href={image} >
-              <img src={image} alt="Restaurant menu" />
+            <a className="flex justify-center p-6 bg-red-700 rounded bg-opacity-70 border-2 border-white" href={image} >
+              <img className="rounded w-full" src={image} alt="Restaurant menu" />
             </a>
           </SRLWrapper>
           </div>
         ))} 
-      </div>,
+      </div>
+      ,
     2: <div></div>
   }
   
   return(
-    <div className="grid place-items-center shadow-md bg-breadsticks bg-cover bg-fixed bg-center">
-      {
-      divs[divNumber]
-      }
-    </div>
+    <div className="grid gap-y-10 pt-20 place-items-center h-full w-full shadow-md bg-breadsticks bg-cover bg-fixed bg-center">
+        {images.map((image, index) => (
+          <div className="w-2/3 h-full" key={index}>
+          <SRLWrapper>
+            <a className="flex justify-center p-6 bg-red-700 rounded bg-opacity-70 border-2 border-white" href={image} >
+              <img className="rounded w-full" src={image} alt="Restaurant menu" />
+            </a>
+          </SRLWrapper>
+          </div>
+        ))} 
+      </div>
   );
 }
 export default Menu;
