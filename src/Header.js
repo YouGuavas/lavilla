@@ -89,7 +89,7 @@ class Header extends React.Component {
             </svg>
           </button>
         </div>
-        <div id="mobile-menu" className="hidden mobile-menu">
+        <div id="mobile-menu" className="hidden mobile-menu absolute">
           <ul className="">
           {links.map((item, index) => (this.toggler("mobile", item, index)))}
 
