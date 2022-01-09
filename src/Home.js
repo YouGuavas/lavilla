@@ -3,6 +3,8 @@ import Highlight from './Highlight';
 function Home() {
   
   const [divNumber, setDivNumber] = useState(1);
+  //div numbers with useState hook
+
   const pointerStyles = "px-2 text-5xl text-red-900 hover:cursor-pointer font-thin scale-y-150 hover:scale-x-110";
   
   
