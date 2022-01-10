@@ -24,7 +24,7 @@ function Home() {
   }
   
   //define carousel
-  const dots = [1, 2, 3, 4, 5];
+  const dots = [1, 2, 3, 4, 5, 6, 7];
   const divs = {
     1:  <div className="h-screen w-full p-6 pt-20 place-items-center">
           <div className="h-full w-full flex place-items-center justify-center">
@@ -160,6 +160,69 @@ function Home() {
           <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
         </div>
         <Highlight dots={dots} number={5}/>
+      </div>,
+      6: 
+      <div className="h-screen w-full p-6 pt-20 bg-white bg-opacity-20">
+        <div className="h-full flex place-items-center">
+          <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
+          <div className="md:px-20 px-10 h-3/4 w-full grid place-items-center">
+            <h3 className="font-fancy font-thin text-gray-700 md:text-4xl text-2xl">Experience the Tastes of Italy</h3>
+            <h4 className="font-semibold md:text-3xl text-xl text-red-900">Enjoy classics like pizza and pasta in Mt. Morris, MI</h4>
+            <p className="md:text-lg text-md">
+              When something is an old favorite, why change it? 
+              That's why La Villa Family Dining & Pizzeria in Mt Morris, 
+              MI uses their the original Italian food menu with favorites that have been beloved since 1974. 
+              From pizza and garlic bread to delectable cheesecake, 
+              you'll find whatever you're craving for every course.
+            </p>
+            
+            <p className="md:text-lg text-md">
+              You'll be able to feed the whole family 
+              when you choose from our large selection of entrees and sides. 
+              Explore our menu today.
+            </p>
+          </div>
+          <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
+        </div>
+        <Highlight dots={dots} number={6}/>
+      </div>,
+      7:
+      <div className="h-screen w-full p-6 pt-20 bg-white bg-opacity-20">
+        <div className="h-full flex place-items-center">
+          <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
+          <div className="md:px-20 px-10 h-full w-full grid md:grid-cols-2 place-items-center">
+          <div className="col-span-2  w-1/2 p-2 bg-green-700 bg-opacity-70 md:hidden flex rounded-full">
+            <img className="rounded-full h-full w-full" src="https://lh3.googleusercontent.com/pw/AM-JKLUieS-MCgC-NGRzJLmYyoJVHrudcSCJYBK4y9mJPns0C3H-U34yaKph0g0Nh38g2qJOfR8wWKKYhljUkRVNAnl4wjHJ3M4fAPfJsRVc_3n_yaOGLXoj_iAoms9k6wRU1wPyRYJlKZCVclCshWG8_RmB=s420-no?authuser=0" />
+          </div>
+          <div className="md:col-span-1 col-span-2 h-full w-full place-items-center">
+            <h3 className="md:text-3xl text-xl text-green-700 font-semibold py-2">
+              What we offer
+            </h3>
+            <p className="md:text-base text-sm">
+              Our classic menu is part of why La Villa has 
+              been a staple of Mt Morris, MI for so long, 
+              so we wouldn't dream of changing it. 
+              Our Italian food menu includes favorites like...
+            </p>
+            <ul className="md:text-base text-sm py-2">
+              <li className="py-1">| <span className="font-semibold">Pizza:</span> House specialties | Build-your-own | Homemade sauce</li>
+              <li className="py-1">| <span className="font-semibold">Traditional dishes:</span> Lasagna | Spaghetti | Veal and chicken parm</li>
+              <li className="py-1">| <span className="font-semibold">Extras:</span> Desserts | Garlic bread and breadsticks | Kid's menu</li>
+            </ul>
+            <p className="md:text-base text-sm">
+              If you're looking to recapture the food from years past, 
+              look no further than our family restaurant. 
+              Call (810) 686-0107 to ask about our dine-in, 
+              carryout and delivery options.
+            </p>
+          </div>
+          <div className="md:col-span-1 p-6 bg-green-700 bg-opacity-70 md:flex hidden rounded-full">
+            <img className="rounded-full h-full w-full" src="https://lh3.googleusercontent.com/pw/AM-JKLUieS-MCgC-NGRzJLmYyoJVHrudcSCJYBK4y9mJPns0C3H-U34yaKph0g0Nh38g2qJOfR8wWKKYhljUkRVNAnl4wjHJ3M4fAPfJsRVc_3n_yaOGLXoj_iAoms9k6wRU1wPyRYJlKZCVclCshWG8_RmB=s420-no?authuser=0" />
+          </div>
+          </div>
+          <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
+        </div>
+        <Highlight dots={dots} number={7}/>
       </div>
   }
 
