@@ -29,13 +29,13 @@ function Home() {
   }
   
   //define carousel
-  const dots = [1, 2, 3, 4, 5, 6, 7];
+  const dots = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   const divs = {
     1:  <div className="h-screen w-full p-6 pt-20 place-items-center">
           <div className="h-full w-full flex place-items-center justify-center">
             <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
-            <div className="md:px-32 px-10 h-full w-full flex justify-center text-center place-items-center">
-            <h1 className="bg-white bg-opacity-70 p-2 rounded-full w-full font-fancy md:text-5xl text-3xl text-red-900">La Villa Family Dining & Pizzeria</h1>
+            <div className="md:px-20 px-10 h-full w-full flex justify-center text-center place-items-center">
+            <h1 className="bg-white bg-opacity-70 p-3 rounded-full w-full font-fancy md:text-5xl text-3xl text-red-900">La Villa Family Dining & Pizzeria</h1>
             </div>
             <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
           </div>
@@ -225,6 +225,28 @@ function Home() {
           <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
         </div>
         <Highlight onClick={handleClick} dots={dots} number={7}/>
+      </div>,
+      8:
+      <div className="h-screen w-full p-6 pt-20 bg-white bg-opacity-20">
+        <div className="h-full flex place-items-center">
+          <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
+          <div className="md:px-20 px-10 h-3/4 w-full grid place-items-center">
+
+          </div>
+          <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
+        </div>
+        <Highlight onClick={handleClick} dots={dots} number={8}/>
+      </div>,
+      9:
+      <div className="h-screen w-full p-6 pt-20 bg-white bg-opacity-20">
+        <div className="h-full flex place-items-center">
+          <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
+          <div className="md:px-20 px-10 h-3/4 w-full grid place-items-center">
+
+          </div>
+          <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
+        </div>
+        <Highlight onClick={handleClick} dots={dots} number={9}/>
       </div>
   }
 
