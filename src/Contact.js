@@ -13,8 +13,8 @@ function Contact() {
     securityCheck(value);
   }
   return(
-  <div id="Contact Us" className="grid grid-cols-5 p-6 pt-20 shadow-md">
-    <div className="p-6 text-center bg-gray-200 col-span-4">
+  <div id="Contact Us" className="grid grid-cols-5 p-6 pt-20 shadow-md bg-breadsticks bg-cover bg-center bg-fixed">
+    <div className="p-6 text-center bg-gray-200 col-span-4 bg-opacity-40">
       <p className="font-fancy text-2xl p-3">Find Italian Food in Mt Morris, MI</p>
       <p className="text-red-800 font-sans p-3">Visit La Villa Family Dining & Pizzeria today</p>
       <p className="font-sans p-3">Thank you for visiting the website of La Villa Family Dining & Pizzeria. Revisit traditional Italian food by stopping by our family restaurant. We're eagerly awaiting your visit.</p>

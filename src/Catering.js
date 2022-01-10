@@ -1,7 +1,7 @@
 export default function Catering() {
   return (
     <div className="shadow-md bg-breadsticks bg-fixed bg-cover bg-center">
-      <section className="h-screen bg-white bg-opacity-60 grid">
+      <section className="h-screen bg-white bg-opacity-20 grid">
         <div className="p-6 grid place-items-center">
         <h2 className="text-4xl font-semibold">
           Put Your Event in Good Hands
