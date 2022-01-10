@@ -1,51 +1,104 @@
+import React, {useState} from 'react';
+import Highlight from './Highlight';
+
 import restaurant from './images/Restaurant.jpg';
 
 export default function Catering() {
-  return (
-    <div className="shadow-md bg-breadsticks bg-fixed bg-cover bg-center">
-      <section className="h-screen bg-white bg-opacity-20 grid">
-        <div className="p-6 grid place-items-center">
-        <h2 className="text-4xl font-semibold">
-          Put Your Event in Good Hands
-        </h2>
-        <h4 className="font-semibold text-2xl">
-          Schedule our catering services in Mt. Morris, Michigan.
-        </h4>
+  const [divNumber, setDivNumber] = useState(1);
+  //div numbers with useState hook
 
-        <p className="text-xl">When you're planning an event, you can't afford to let your menu fall by the wayside. 
-          Fortunately, you don't have to worry when you let our team bring the food. 
-          La Villa Family Dining & Pizzeria provides catering services in Mt Morris, MI.</p>
+  const pointerStyles = "px-2 text-5xl text-red-900 hover:cursor-pointer font-thin scale-y-150 hover:scale-x-110";
 
-        <p className="text-xl">If you're a fan of our food, you can have it whenever you like. 
-          Share your favorite meals with your guests without cooking it all yourself. 
-          Call (810) 686-0107 now to schedule catering services.</p>
+  const nextDiv = () => {
+    const divLength = Object.keys(divs).length;
+    (divNumber >= divLength) ? setDivNumber(1) : setDivNumber(divNumber + 1);
+    /* if the current div is the last, then go back to the first, 
+    else go to next div */
+  }
+
+
+  const prevDiv = () => {
+    const divLength = Object.keys(divs).length;
+    (divNumber <= 1) ? setDivNumber(divLength) : setDivNumber(divNumber - 1);
+    /* if the current div is the first, then go to the last,
+    else go to previous div */
+  }
+
+  const handleClick = (num) => {
+    setDivNumber(num);
+    //when clicked, move carousel to appropriate dot
+  }
+
+  const dots = [1, 2, 3];
+  const divs = {
+    1: 
+    <div className="h-screen w-full bg-white bg-opacity-20 p-6 pt-20 place-items-center">
+      <div className="h-full w-full flex place-items-center justify-center">
+        <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
+        <div className="p-6 grid place-items-center bg-white bg-opacity-60">
+          <h2 className="md:text-4xl text-2xl py-3 font-semibold">
+            Put Your Event in Good Hands
+          </h2>
+          <h4 className="font-semibold text-red-900 md:text-2xl text-xl py-2">
+            Schedule our catering services in Mt. Morris, Michigan.
+          </h4>
+
+          <p className="md:text-xl">When you're planning an event, you can't afford to let your menu fall by the wayside. 
+            Fortunately, you don't have to worry when you let our team bring the food. 
+            La Villa Family Dining & Pizzeria provides catering services in Mt Morris, MI.</p>
+
+          <p className="md:text-xl">If you're a fan of our food, you can have it whenever you like. 
+            Share your favorite meals with your guests without cooking it all yourself. 
+            Call (810) 686-0107 now to schedule catering services.</p>
         </div>
-      </section>
-      <section className="h-screen grid grid-cols-2 grid-rows-2 bg-green-900 bg-opacity-90 place-items-center">
-          <div className="col-span-2 md:col-span-1 row-span-1 md:row-span-2 grid place-items-center p-6">
-            <div className="p-3 bg-white rounded-full">
-            <img className="rounded-full h-2/3 w-2/3 md:h-full md:w-full" alt="La Villa restaurant" 
-            src={restaurant} />
-            </div>
+        <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
+      </div>
+      <Highlight onClick={handleClick} dots={dots} number={divNumber}/>
+    </div>,
+  2:
+  <div className="h-screen bg-white bg-opacity-20 w-full p-6 pt-20 place-items-center">
+    <div className="h-full w-full flex place-items-center justify-center">
+    <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
+      <div className="grid grid-cols-2 grid-rows-2 place-items-center">
+        <div className="col-span-2 md:col-span-1 row-span-1 md:row-span-2 grid place-items-center p-6">
+          <div className="p-3 bg-white rounded-full">
+          <img className="rounded-full h-2/3 w-2/3 md:h-full md:w-full" alt="La Villa restaurant" 
+          src={restaurant} />
           </div>
-          <div className="col-span-2 md:col-span-1 row-span-1 md:row-span-2 text-white">
-            <h2 className="font-semibold text-3xl">Location is key</h2>
-            <p className="text-lg">You want to host an event, but you don't have a good location - what do you do? 
-              You can start by turning to La Villa Family Dining & Pizzeria. 
-              We have an event room in our restaurant that's open for rentals, so you can trust us to host your...</p>
-            <ul className="text-lg p-6 list-disc">
-              <li>Baby shower</li>
-              <li>Rehearsal dinner</li>
-              <li>Birthday party</li>
-              <li>Graduation party</li>
-              <li>Family gathering</li>
-            </ul>
-            <p className="text-lg">Speak to us soon about using our event room!</p>
-          </div>
-        </section>
-      <section className="h-screen">
-
-      </section>
+        </div>
+        <div className="col-span-2 md:col-span-1 row-span-1 md:row-span-2 text-white">
+          <h2 className="font-semibold text-3xl">Location is key</h2>
+          <p className="text-lg">You want to host an event, but you don't have a good location - what do you do? 
+            You can start by turning to La Villa Family Dining & Pizzeria. 
+            We have an event room in our restaurant that's open for rentals, so you can trust us to host your...</p>
+          <ul className="text-lg p-6 list-disc">
+            <li>Baby shower</li>
+            <li>Rehearsal dinner</li>
+            <li>Birthday party</li>
+            <li>Graduation party</li>
+            <li>Family gathering</li>
+          </ul>
+          <p className="text-lg">Speak to us soon about using our event room!</p>
+        </div>
+      </div>
+      <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
     </div>
+    <Highlight onClick={handleClick} dots={dots} number={divNumber}/>
+  </div>,
+    3:
+    <div className="h-screen bg-white bg-opacity-20 w-full p-6 pt-20 place-items-center">
+      <div className="h-full w-full flex place-items-center justify-center">
+        <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
+        <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
+      </div>
+      <Highlight onClick={handleClick} dots={dots} number={divNumber}/>
+    </div>
+  }
+  return (
+    <div className="grid place-items-center shadow-md bg-breadsticks bg-fixed bg-cover bg-center">
+    {
+    divs[divNumber]
+    }
+  </div>
   )
 }
