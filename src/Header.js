@@ -63,7 +63,6 @@ class Header extends React.Component {
 
   render(){  
     const links = ["Home", "Menu", "Catering", "Careers", "Contact Us", "Order Delivery"];
-    //const logo = "https://lh3.googleusercontent.com/pw/AM-JKLVa48I5m5Vgg26NKgWMHI1NZHIEt72VCjljIQxdwVRuEcLEKpFFwcGHkV8hnkttC5BtcjaR2fvVaPmoslAvJBcPprhGDrXm-D3Bkdc1LkKsMjOQnw3drO1-41NdDKvpeC0x6ei9FK7NN7ewNZ41tlJk=w119-h80-no?authuser=0"
     return(
     <nav className='sticky bg-opacity-0 top-0 z-50 bg-white flex justify-between px-20'>
           <div>
