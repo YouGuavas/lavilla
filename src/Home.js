@@ -230,8 +230,34 @@ function Home() {
       <div className="h-screen w-full p-6 pt-20 bg-white bg-opacity-20">
         <div className="h-full flex place-items-center">
           <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
-          <div className="md:px-20 px-10 h-3/4 w-full grid place-items-center">
+          <div className="md:px-20 px-10 h-full w-full grid">
+            <h3 className="font-fancy font-thin text-gray-700 md:text-4xl text-2xl">
+              Satisfy Your Lunch Cravings
+            </h3>
+            <h4 className="font-semibold md:text-2xl text-xl text-red-900">
+              Order sandwiches and more from La Villa 
+              Family Dining & Pizzeria in Mt. Morris, MI
+            </h4>
+            <p className="md:text-base text-sm">Whether you need something quick for lunch or you're not in the mood for traditional Italian food, 
+            you can still find something you'll enjoy on our menu. 
+            La Villa Family Dining & Pizzeria offers sandwiches, 
+            wraps and more in Mt Morris, MI.
+            </p>
 
+            <p className='md:text-base text-sm'>
+              For non-traditional or lighter options, 
+              look to the other sections of our menu. We've got...
+            </p>
+            <ul className='md:text-base text-sm'>
+              <li className="py-1"><span className="font-semibold">Other entrees:</span> Fish and chips | Burgers | Reubens</li>
+              <li className="py-1"><span className="font-semibold">Healthy choices:</span> Salads | Soups | Chili</li>
+              <li className='py-1'><span className="font-semibold">Appetizers:</span> Cheese sticks | Fries | Wings</li>
+            </ul>
+            <p className='md:text-base text-sm'>
+              From standard wraps to hearty burgers, 
+              we've got what you want. 
+              Visit our restaurant today to order your next meal.
+            </p>
           </div>
           <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
         </div>
@@ -241,8 +267,22 @@ function Home() {
       <div className="h-screen w-full p-6 pt-20 bg-white bg-opacity-20">
         <div className="h-full flex place-items-center">
           <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
-          <div className="md:px-20 px-10 h-3/4 w-full grid place-items-center">
-
+          <div className="md:px-20 px-10 h-full w-full grid md:gap-4 grid-cols-2 place-items-center">
+          <div className="md:col-span-1 col-span-2 md:w-full w-1/2 rounded-full flex md:p-6 p-2 bg-green-700 bg-opacity-70">
+            <img className="rounded-full h-full w-full" src="https://lh3.googleusercontent.com/pw/AM-JKLX4uV5C9WgRdyW-QTU6duFM_VvDdvlqJqPw2ZeHbwXgJi32ivQXHoDYarmkV2C75FZJBRM6jgh-JuQgkyXycNW115GQekuq5Wdi4NG61ZZM9PAhQn_QzVMRvRVM-iaC0pVCV2YL9EqX5pYVS7n8YBER=s420-no?authuser=0" />
+          </div>
+          <div className="md:col-span-1 col-span-2 place-items-center">
+            <h3 className='md:text-2xl text-xl text-green-700 font-semibold py-2'>
+              Join us for lunch
+            </h3>
+            <p className="text-base">
+              You shouldn't have to lose energy for the second half of your 
+              day because your lunch didn't give you the boost of energy you need.
+              Our sandwiches are perfect when you need something quick yet filling for lunch. 
+              Come by our restaurant, and you won't be disappointed. 
+              Call (810) 686-0107 now to learn about our delivery and carryout options for when you're on the go.
+            </p>
+          </div>
           </div>
           <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
         </div>
