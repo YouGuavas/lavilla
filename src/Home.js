@@ -22,6 +22,11 @@ function Home() {
     /* if the current div is the first, then go to the last,
     else go to previous div */
   }
+
+  const handleClick = (num) => {
+    setDivNumber(num);
+    //when clicked, move carousel to appropriate dot
+  }
   
   //define carousel
   const dots = [1, 2, 3, 4, 5, 6, 7];
@@ -34,7 +39,7 @@ function Home() {
             </div>
             <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
           </div>
-          <Highlight dots={dots} number={1}/>
+          <Highlight onClick={handleClick} dots={dots} number={1}/>
         </div>,
 
     2: <div className="h-screen w-full bg-white bg-opacity-20 p-6 pt-20">
@@ -51,7 +56,7 @@ function Home() {
           </div>
           <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
         </div>
-        <Highlight dots={dots} number={2}/>
+        <Highlight onClick={handleClick} dots={dots} number={2}/>
       </div>,
 
     3: <div className="h-screen w-full bg-white bg-opacity-20 p-6 pt-20">
@@ -77,7 +82,7 @@ function Home() {
           </div>
           <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
         </div>
-        <Highlight dots={dots} number={3}/>
+        <Highlight onClick={handleClick} dots={dots} number={3}/>
       </div>,
 
     4: <div className="h-screen w-full p-6 pt-20 bg-white bg-opacity-20">
@@ -94,19 +99,16 @@ function Home() {
             <div className="md:row-span-2 row-span-1 md:col-span-1 col-span-2 md:h-full h-1/2 grid grid-rows-3 gap-2 place-items-center">
               <div className="md:row-start-2 md:h-full h-1/2 row-span-1 grid">
                 
-                <a href="/Italian specialties">
-                  <div className="bg-green-700 bg-opacity-90 hover:scale-x-110 text-white p-6">
+                  <div onClick={() => {handleClick(6)}} className="bg-green-700 hover:cursor-pointer bg-opacity-90 hover:scale-x-110 text-white p-6">
                     <p>Italian specialties  ⤑</p>
                     <p>Revel in our expansive menu of authentic dishes.</p>
                   </div>
-                </a>
 
-                <a href="/Sandwiches">
-                  <div className="hover:scale-x-110 bg-opacity-90 p-6">
+                
+                  <div className="hover:scale-x-110 hover:cursor-pointer bg-opacity-90 p-6">
                     <p>Sandwiches & more  ⤑</p>
                     <p>Find what you crave.</p>
                   </div>
-                </a>
 
                 <a href="/Catering">
                   <div className="bg-red-900 hover:scale-x-110 bg-opacity-90 text-white p-6">
@@ -120,7 +122,7 @@ function Home() {
           </div>
           <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
         </div>
-        <Highlight dots={dots} number={4}/>
+        <Highlight onClick={handleClick} dots={dots} number={4}/>
       </div>,
 
     5: <div className="h-screen w-full p-6 pt-20 bg-white bg-opacity-20">
@@ -159,7 +161,7 @@ function Home() {
           </div>
           <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
         </div>
-        <Highlight dots={dots} number={5}/>
+        <Highlight onClick={handleClick} dots={dots} number={5}/>
       </div>,
       6: 
       <div className="h-screen w-full p-6 pt-20 bg-white bg-opacity-20">
@@ -184,7 +186,7 @@ function Home() {
           </div>
           <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
         </div>
-        <Highlight dots={dots} number={6}/>
+        <Highlight onClick={handleClick} dots={dots} number={6}/>
       </div>,
       7:
       <div className="h-screen w-full p-6 pt-20 bg-white bg-opacity-20">
@@ -222,7 +224,7 @@ function Home() {
           </div>
           <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
         </div>
-        <Highlight dots={dots} number={7}/>
+        <Highlight onClick={handleClick} dots={dots} number={7}/>
       </div>
   }
 
