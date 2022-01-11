@@ -89,7 +89,11 @@ export default function Catering() {
     <div className="h-screen bg-white bg-opacity-20 w-full p-6 pt-20 place-items-center">
       <div className="h-full w-full flex place-items-center justify-center">
         <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
-          <a>View our catering menu!</a>
+        <div className="md:px-20 px-10 h-full w-full flex grid grid-cols-4 grid-rows-3 justify-center text-center place-items-center">
+            <a href="/Menu#catering" className="row-start-2 row-span-1 py-6 h-full md:text-xl text-lg w-full md:col-start-2 md:col-span-2 col-span-4 text-center bg-red-800 bg-opacity-90 border border-gray-200 text-white rounded grid place-items-center justify-center hover:scale-x-110">
+              View our catering menu!
+            </a>
+          </div>
         <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
       </div>
       <Highlight onClick={handleClick} dots={dots} number={divNumber}/>
