@@ -35,7 +35,7 @@ export default function Catering() {
     <div className="h-screen w-full bg-white bg-opacity-20 p-6 pt-20 place-items-center">
       <div className="h-full w-full flex place-items-center justify-center">
         <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
-        <div className="p-6 grid place-items-center bg-white bg-opacity-60">
+        <div className="md:px-20 px-10 h-full w-full p-6 grid place-items-center bg-white bg-opacity-60">
           <h2 className="md:text-4xl text-2xl py-3 font-semibold">
             Put Your Event in Good Hands
           </h2>
@@ -59,26 +59,26 @@ export default function Catering() {
   <div className="h-screen bg-white bg-opacity-20 w-full p-6 pt-20 place-items-center">
     <div className="h-full w-full flex place-items-center justify-center">
     <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
-      <div className="grid grid-cols-2 grid-rows-2 place-items-center">
-        <div className="col-span-2 md:col-span-1 row-span-1 md:row-span-2 grid place-items-center p-6">
-          <div className="p-3 bg-white rounded-full">
-          <img className="rounded-full h-2/3 w-2/3 md:h-full md:w-full" alt="La Villa restaurant" 
+      <div className="grid md:gap-4 h-full w-full md:px-20 px-10 py-2 grid-cols-2 place-items-center">
+        <div className="md:col-span-1 col-span-2 md:w-full w-1/2 rounded-full flex md:p-6 p-2 bg-green-700 bg-opacity-70">
+          <img className="rounded-full h-full w-full" alt="La Villa restaurant" 
           src={restaurant} />
-          </div>
         </div>
-        <div className="col-span-2 md:col-span-1 row-span-1 md:row-span-2 text-white">
-          <h2 className="font-semibold text-3xl">Location is key</h2>
-          <p className="text-lg">You want to host an event, but you don't have a good location - what do you do? 
+        <div className="bg-white bg-opacity-60 col-span-2 p-2 md:col-span-1 place-items-center">
+          <h2 className="font-semibold md:text-3xl text-xl text-red-900">Location is key</h2>
+          <p className="md:text-lg text-sm">You want to host an event, but you don't have a good location - what do you do? 
             You can start by turning to La Villa Family Dining & Pizzeria. 
             We have an event room in our restaurant that's open for rentals, so you can trust us to host your...</p>
-          <ul className="text-lg p-6 list-disc">
+          <ul className="md:text-lg text-sm p-6 list-disc">
             <li>Baby shower</li>
             <li>Rehearsal dinner</li>
             <li>Birthday party</li>
             <li>Graduation party</li>
             <li>Family gathering</li>
           </ul>
-          <p className="text-lg">Speak to us soon about using our event room!</p>
+          <p className="md:text-lg text-sm">
+            Speak to us soon about using our event room!
+          </p>
         </div>
       </div>
       <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
@@ -89,6 +89,7 @@ export default function Catering() {
     <div className="h-screen bg-white bg-opacity-20 w-full p-6 pt-20 place-items-center">
       <div className="h-full w-full flex place-items-center justify-center">
         <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
+          <a>View our catering menu!</a>
         <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
       </div>
       <Highlight onClick={handleClick} dots={dots} number={divNumber}/>
