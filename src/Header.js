@@ -12,8 +12,8 @@ class Header extends React.Component {
   toggler = (style, item, index) => {
     //toggle active nav item
     let myhref = "/"+item;
-    let activeStyle = "py-4 px-2 text-green-700 border-b-4 border-red-700 font-semibold";
-    let normalStyle = "py-4 px-2 text-gray-700 font-semibold hover:text-green-700 transition duration-300";
+    let activeStyle = "py-4 px-2 bg-white bg-opacity-50 rounded text-green-700 border-b-2 border-green-700 font-semibold";
+    let normalStyle = "py-4 px-2 text-gray-800 font-semibold hover:text-green-700 transition duration-300";
     let menuType = '';
     if (myhref === "/Home") {
       myhref = "/"
@@ -23,8 +23,8 @@ class Header extends React.Component {
     }
     if (style === "mobile") {
       menuType = 'mobile';
-      activeStyle = "block text-sm px-2 py-4 text-white bg-green-700 font-semibold";
-      normalStyle = "block text-sm px-2 py-4 hover:bg-green-700 hover:text-white transition duration-300";
+      activeStyle = "block text-sm px-2 py-4 text-white bg-green-700 bg-opacity-60 font-semibold";
+      normalStyle = "block font-semibold text-sm px-2 py-4 hover:bg-green-700 hover:bg-opacity-60 hover:text-white transition duration-300";
     }
     const activeLink = <a href={myhref} key={index} className={activeStyle} onClick={() => {this.handleClick({menuType}, item, index)}}>{item}</a>;
     const inactiveLink = <a href={myhref} key={index} className={normalStyle} onClick={() => {this.handleClick({menuType}, item, index)}}>{item}</a>;
@@ -64,7 +64,7 @@ class Header extends React.Component {
   render(){  
     const links = ["Home", "Menu", "Catering", "Contact Us", "Order Delivery"];
     return(
-    <nav className='sticky bg-opacity-0 top-0 z-50 bg-white flex justify-between px-20'>
+    <nav className='fixed inset-x-0 bg-opacity-0 top-0 z-50 bg-white flex justify-between md:px-20 px-10'>
           <div>
             <a href="/" className="flex items-center">
                 <span className="">
@@ -74,7 +74,7 @@ class Header extends React.Component {
           </div>
           <div className="hidden md:flex items-end space-x-1">
               {links.map((item, index) => (this.toggler("standard", item, index)))}
-            </div>
+          </div>
         <div className="md:hidden flex items-center">
           <button name="hamburger menu" id="nav-button" className="outline-none mobile-menu-button" onClick={() => {this.handleClick("mobile")}}>
             <svg className="w-6 h-6 text-gray-500"
@@ -89,7 +89,7 @@ class Header extends React.Component {
             </svg>
           </button>
         </div>
-        <div id="mobile-menu" className="hidden mobile-menu">
+        <div id="mobile-menu" className="hidden mobile-menu bg-white bg-opacity-40">
           <ul className="">
           {links.map((item, index) => (this.toggler("mobile", item, index)))}
 

@@ -32,7 +32,7 @@ export default function Catering() {
   const dots = [1, 2, 3];
   const divs = {
     1: 
-    <div className="h-screen w-full bg-white bg-opacity-20 p-6 pt-20 place-items-center">
+    <div className="h-screen w-full bg-white bg-opacity-20 p-6 place-items-center">
       <div className="h-full w-full flex place-items-center justify-center">
         <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
         <div className="md:px-20 px-10 h-full w-full p-6 grid place-items-center bg-white bg-opacity-60">
@@ -56,7 +56,7 @@ export default function Catering() {
       <Highlight onClick={handleClick} dots={dots} number={divNumber}/>
     </div>,
   2:
-  <div className="h-screen bg-white bg-opacity-20 w-full p-6 pt-20 place-items-center">
+  <div className="h-screen bg-white bg-opacity-20 w-full p-6 place-items-center">
     <div className="h-full w-full flex place-items-center justify-center">
     <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
       <div className="grid md:gap-4 h-full w-full md:px-20 px-10 py-2 grid-cols-2 place-items-center">
@@ -86,7 +86,7 @@ export default function Catering() {
     <Highlight onClick={handleClick} dots={dots} number={divNumber}/>
   </div>,
     3:
-    <div className="h-screen bg-white bg-opacity-20 w-full p-6 pt-20 place-items-center">
+    <div className="h-screen bg-white bg-opacity-20 w-full p-6 place-items-center">
       <div className="h-full w-full flex place-items-center justify-center">
         <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
         <div className="md:px-20 px-10 h-full w-full flex grid grid-cols-4 grid-rows-3 justify-center text-center place-items-center">
@@ -100,7 +100,7 @@ export default function Catering() {
     </div>
   }
   return (
-    <div className="grid place-items-center shadow-md bg-breadsticks bg-fixed bg-cover bg-center">
+    <div className="grid place-items-center pt-40 shadow-md bg-breadsticks bg-fixed bg-cover bg-center">
     {
     divs[divNumber]
     }

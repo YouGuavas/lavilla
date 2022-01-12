@@ -13,7 +13,7 @@ function Contact() {
     securityCheck(value);
   }
   return(
-  <div id="Contact Us" className="grid grid-cols-5 p-6 pt-20 shadow-md bg-breadsticks bg-cover bg-center bg-fixed">
+  <div id="Contact Us" className="grid grid-cols-5 p-6 pt-40 shadow-md bg-breadsticks bg-cover bg-center bg-fixed">
     <div className="p-6 text-center bg-white col-span-4 bg-opacity-60">
       <p className="font-fancy text-2xl p-3">Find Italian Food in Mt Morris, MI</p>
       <p className="text-red-800 font-sans p-3">Visit La Villa Family Dining & Pizzeria today</p>

@@ -19,7 +19,7 @@ function Menu() {
   ]
 
   return(
-    <div className="pt-20 h-full w-full shadow-md bg-breadsticks bg-cover bg-fixed bg-center">
+    <div className="pt-40 h-full w-full shadow-md bg-breadsticks bg-cover bg-fixed bg-center">
         <section id="full" className="h-full w-full grid md:gap-y-10 gap-y-5 place-items-center p-6">
         <h2 className="text-5xl font-thin text-red-900 font-fancy">Full Menu</h2>
         {fullMenu.map((image, index) => (
