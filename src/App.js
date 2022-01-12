@@ -33,7 +33,7 @@ function Footer() {
     <div className="grid p-6 place-items-center h-1/4">
       <p>LaVilla Family Dining & Pizzeria</p>
       <p>Proud Member of</p>
-      <img alt="Flint & Genesee Chamber of Commerce logo" src={FGLogo} />
+      <a href="https://www.flintandgenesee.org/" target="_blank"><img alt="Flint & Genesee Chamber of Commerce logo" src={FGLogo} /></a>
     </div>
   );
 }
