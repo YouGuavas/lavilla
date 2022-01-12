@@ -11,10 +11,6 @@
 # production
 /build
 
-
-#removed component
-/src/Careers.js
-
 # misc
 .DS_Store
 .env.local
