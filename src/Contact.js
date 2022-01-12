@@ -90,8 +90,8 @@ function Contact() {
       <div className="md:col-span-1 md:row-span-2 text-center place-items-center col-span-2 grid grid-cols-2 md:grid-rows-3 grid-rows-4 bg-red-800 bg-opacity-70 rounded text-white p-6 w-full h-full md:h-3/4">
         <div className="md:col-span-2 col-span-1 row-span-2 md:row-span-1">
           <h6 className="font-bold md:text-sm">La Villa Family Dining & Pizzeria</h6>
-          <p>8372 N Saginaw Road</p>
-          <p>Mt Morris, MI 48458</p>
+          <p className="md:text-sm">8372 N Saginaw Road</p>
+          <p className="md:text-sm">Mt Morris, MI 48458</p>
         </div>
         <div className="md:col-span-2 col-span-1 row-span-4 md:hidden">
           <h7 className="font-semibold font-base">HOURS</h7>
