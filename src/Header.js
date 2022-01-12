@@ -62,7 +62,7 @@ class Header extends React.Component {
   }
 
   render(){  
-    const links = ["Home", "Menu", "Catering", "Careers", "Contact Us", "Order Delivery"];
+    const links = ["Home", "Menu", "Catering", "Contact Us", "Order Delivery"];
     return(
     <nav className='sticky bg-opacity-0 top-0 z-50 bg-white flex justify-between px-20'>
           <div>
