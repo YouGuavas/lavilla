@@ -7,7 +7,7 @@ export default function Catering() {
   const [divNumber, setDivNumber] = useState(1);
   //div numbers with useState hook
 
-  const pointerStyles = "px-2 text-5xl text-red-900 hover:cursor-pointer font-thin scale-y-150 hover:scale-x-110";
+  const pointerStyles = "transition duration-400 px-2 text-5xl text-red-900 hover:cursor-pointer font-thin scale-y-150 hover:scale-x-110";
 
   const nextDiv = () => {
     const divLength = Object.keys(divs).length;
@@ -90,7 +90,7 @@ export default function Catering() {
       <div className="h-full w-full flex place-items-center justify-center">
         <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
         <div className="md:px-20 px-10 h-full w-full flex grid grid-cols-4 grid-rows-3 justify-center text-center place-items-center">
-            <a href="/Menu#catering" className="row-start-2 row-span-1 py-6 h-full md:text-xl text-lg w-full md:col-start-2 md:col-span-2 col-span-4 text-center bg-red-800 bg-opacity-90 border border-gray-200 text-white rounded grid place-items-center justify-center hover:scale-x-110">
+            <a href="/Menu#catering" className="transition duration-400 row-start-2 row-span-1 py-6 h-full md:text-xl text-lg w-full md:col-start-2 md:col-span-2 col-span-4 text-center bg-red-800 bg-opacity-90 border border-gray-200 text-white rounded grid place-items-center justify-center hover:scale-x-110">
               View our catering menu!
             </a>
           </div>

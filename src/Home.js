@@ -5,7 +5,7 @@ function Home() {
   const [divNumber, setDivNumber] = useState(1);
   //div numbers with useState hook
 
-  const pointerStyles = "px-2 text-5xl text-red-900 hover:cursor-pointer font-thin scale-y-150 hover:scale-x-110";
+  const pointerStyles = "px-2 text-5xl text-red-900 transition duration-400 hover:cursor-pointer font-thin scale-y-150 hover:scale-x-110";
   
   
   const nextDiv = () => {
@@ -50,7 +50,7 @@ function Home() {
             <p className="md:text-2xl text-lg py-6 font-semibold col-span-4 row-span-1">
             Come join our family by visiting La Villa Family Dining & Pizzeria
             </p>
-            <a href="/Contact Us" className="row-span-1 py-6 h-full md:text-xl text-lg w-full md:col-start-2 md:col-span-2 col-span-4 text-center bg-red-800 bg-opacity-90 border border-gray-200 text-white rounded grid place-items-center justify-center hover:scale-x-110">
+            <a href="/Contact Us" className="transition duration-400 row-span-1 py-6 h-full md:text-xl text-lg w-full md:col-start-2 md:col-span-2 col-span-4 text-center bg-red-800 bg-opacity-90 border border-gray-200 text-white rounded grid place-items-center justify-center hover:scale-x-110">
               Contact Us
             </a>
           </div>
@@ -93,25 +93,25 @@ function Home() {
               <div className="grid grid-cols-1 grid-rows-3 place-items-center">
                 <h2 className="font-semibold md:text-3xl text-2xl row-span-1 col-span-1">Your local source for traditional Italian cuisine</h2>
                 <p className="col-span-1 row-span-1 md:text-lg">Visit our reopened family restaurant in Mt. Morris, MI</p>
-                <a href="/Contact Us" className="row-span-1 py-6 md:h-full md:text-xl w-3/4 col-span-1 text-center bg-red-900 bg-opacity-90 border border-gray-200 text-white rounded grid place-items-center justify-center hover:scale-x-110">Contact Us</a>
+                <a href="/Contact Us" className="transition duration-400 row-span-1 py-6 md:h-full md:text-xl w-3/4 col-span-1 text-center bg-red-900 bg-opacity-90 border border-gray-200 text-white rounded grid place-items-center justify-center hover:scale-x-110">Contact Us</a>
               </div>
             </div>
             <div className="md:row-span-2 row-span-1 md:col-span-1 col-span-2 md:h-full h-1/2 grid grid-rows-3 gap-2 place-items-center">
               <div className="md:row-start-2 md:h-full h-1/2 row-span-1 grid">
                 
-                  <div onClick={() => {handleClick(6)}} className="bg-green-700 hover:cursor-pointer bg-opacity-90 hover:scale-x-110 text-white p-6">
+                  <div onClick={() => {handleClick(6)}} className="transition duration-400 bg-green-700 hover:cursor-pointer bg-opacity-90 hover:scale-x-110 text-white p-6">
                     <p>Italian specialties  ⤑</p>
                     <p>Revel in our expansive menu of authentic dishes.</p>
                   </div>
 
                 
-                  <div className="hover:scale-x-110 hover:cursor-pointer bg-opacity-90 p-6">
+                  <div className="transition duration-400 hover:scale-x-110 hover:cursor-pointer bg-opacity-90 p-6">
                     <p>Sandwiches & more  ⤑</p>
                     <p>Find what you crave.</p>
                   </div>
 
                 <a href="/Catering">
-                  <div className="bg-red-900 hover:scale-x-110 bg-opacity-90 text-white p-6">
+                  <div className="transition duration-400 bg-red-900 hover:scale-x-110 bg-opacity-90 text-white p-6">
                     <p>Catering & events  ⤑</p>
                     <p>Let our staff help with your next big event.</p>
                   </div>
@@ -143,7 +143,7 @@ function Home() {
                 <p className="p-2 text-sm">
                   For a taste of classic dishes mixed with some new additions, visit us soon.
                 </p>
-                <a href="/Contact Us" className="row-span-1 md:py-2 py-1 md:text-xl text-lg w-1/2 col-span-1 text-center border rounded border-white bg-opacity-90 text-red-900 font-semibold grid place-items-center justify-center hover:scale-x-110">
+                <a href="/Contact Us" className="row-span-1 md:py-2 py-1 md:text-xl text-lg w-1/2 col-span-1 text-center border rounded border-red-900 bg-opacity-90 text-red-900 font-semibold grid place-items-center justify-center transition duration-400 hover:scale-x-110">
                   Visit Today!
                 </a>
               </div>
