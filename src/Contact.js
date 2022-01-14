@@ -87,28 +87,28 @@ function Contact() {
     </div>
     {/*End of contact form*/}
     <div className="h-screen grid grid-cols-2 place-items-center grid-rows-2 col-span-5 gap-2">
-      <div className="md:col-span-1 md:row-span-2 text-center place-items-center col-span-2 grid grid-cols-2 md:grid-rows-3 grid-rows-4 bg-red-800 bg-opacity-70 rounded text-white p-6 w-full h-full md:h-3/4">
+      <div className="md:col-span-1 md:row-span-2 text-center place-items-center col-span-2 grid grid-cols-2 md:grid-rows-3 bg-red-800 bg-opacity-70 rounded text-white p-6 w-full h-full md:h-3/4">
         <div className="md:col-span-2 col-span-1 row-span-2 md:row-span-1">
           <h6 className="font-bold md:text-sm">La Villa Family Dining & Pizzeria</h6>
-          <p className="md:text-sm">8372 N Saginaw Road</p>
-          <p className="md:text-sm">Mt Morris, MI 48458</p>
+          <p className="text-sm">8372 N Saginaw Road</p>
+          <p className="text-sm">Mt Morris, MI 48458</p>
         </div>
         <div className="md:col-span-2 col-span-1 row-span-4 md:hidden">
-          <h7 className="font-semibold font-base">HOURS</h7>
-          <ul className="font-base">
-            <li>Mon: 11:00AM-9:00PM</li>
-            <li>Tue: 11:00AM-9:00PM</li>
-            <li>Wed: 11:00AM-9:00PM</li>
-            <li>Thu: 11:00AM-9:00PM</li>
-            <li>Fri: 11:00AM-9:00PM</li>
-            <li>Sat: 11:00AM-9:00PM</li>
-            <li>Sun: 12:00PM-8:00PM</li>
+          <h7 className="font-semibold text-sm">HOURS</h7>
+          <ul className="text-xs">
+            <li className="py-1">Mon: 11:00AM-9:00PM</li>
+            <li className="py-1">Tue: 11:00AM-9:00PM</li>
+            <li className="py-1">Wed: 11:00AM-9:00PM</li>
+            <li className="py-1">Thu: 11:00AM-9:00PM</li>
+            <li className="py-1">Fri: 11:00AM-9:00PM</li>
+            <li className="py-1">Sat: 11:00AM-9:00PM</li>
+            <li className="py-1">Sun: 12:00PM-8:00PM</li>
           </ul>
         </div>
 
         <div className="md:col-span-2 col-span-1 row-span-2 md:row-span-1">
-          <h8 className="font-semibold md:text-sm">CALL US</h8>
-          <p className="md:text-sm">Phone: (810) 686-0107</p>
+          <h8 className="font-semibold text-sm">CALL US</h8>
+          <p className="text-sm">Phone: (810) 686-0107</p>
         </div>
         <div className="md:col-span-2 col-span-1 hidden md:block md:row-span-1">
           <h7 className="font-semibold text-sm">HOURS</h7>
