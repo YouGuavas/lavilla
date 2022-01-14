@@ -45,7 +45,7 @@ function Home() {
     2: <div className="h-screen p-6 w-full bg-white bg-opacity-20">
         <div className="h-full w-full flex place-items-center justify-center">
           <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
-          <div className="md:px-20 px-10 py-2 md:pt-32 pt-12 md:h-3/4 h-full w-full grid md:grid-rows-3 grid-cols-4">
+          <div className="md:px-20 px-10 py-3 md:mt-32 mt-12 h-5/6 w-full grid md:grid-rows-3 grid-cols-4">
             <p className="md:text-4xl text-2xl py-6 font-semibold text-red-900 col-span-4 row-span-1">Enjoy Good Food With Good Company</p>
             <p className="md:text-2xl text-lg py-6 font-semibold col-span-4 row-span-1">
             Come join our family by visiting La Villa Family Dining & Pizzeria
