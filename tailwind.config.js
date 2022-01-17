@@ -10,7 +10,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      'fancy': ['Brush Script MT', 'Courier New', 'Georgia', 'Helvetica']
+      'fancy': ['Brush Script MT', 'cursive']
     }
   },
   plugins: [],
