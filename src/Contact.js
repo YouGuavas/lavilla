@@ -14,13 +14,15 @@ function Contact() {
   }
   return(
   <div id="Contact Us" className="grid grid-cols-5 p-6 pt-40 shadow-md bg-breadsticks bg-cover bg-center bg-fixed">
-    <div className="p-6 text-center bg-white col-span-4 bg-opacity-60">
+    
+    <div className="p-6 text-center bg-white col-span-5 md:col-span-4 bg-opacity-60">
       <p className="font-fancy text-2xl p-3">Find Italian Food in Mt Morris, MI</p>
       <p className="text-red-800 font-sans p-3">Visit La Villa Family Dining & Pizzeria today</p>
       <p className="font-sans p-3">Thank you for visiting the website of La Villa Family Dining & Pizzeria. Revisit traditional Italian food by stopping by our family restaurant. We're eagerly awaiting your visit.</p>
 
       <p className="font-sans p-3">Please use the form on this page to email us. You can also call (810) 686-0107 to learn about our dine-in, carryout and delivery options.</p>
     </div>
+
     {/* Contact Form */}
     <div className="col-span-5 p-6">
       <form className="w-full max-w-lg">
@@ -86,6 +88,7 @@ function Contact() {
       </form>
     </div>
     {/*End of contact form*/}
+
     <div className="h-screen grid grid-cols-2 place-items-center grid-rows-2 col-span-5 gap-2">
       <div className="md:col-span-1 md:row-span-2 text-center place-items-center col-span-2 grid grid-cols-2 md:grid-rows-3 bg-red-800 bg-opacity-70 rounded text-white p-6 w-full h-full md:h-3/4">
         <div className="md:col-span-2 col-span-1 row-span-2 md:row-span-1">
@@ -125,6 +128,7 @@ function Contact() {
       </div>
       <iframe className="md:col-span-1 md:row-span-2 col-span-2 w-full h-full md:h-3/4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2911.8082215932764!2d-83.69609114927391!3d43.12955477904035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882385c68873d049%3A0x26f4fd8b513c2810!2sLa%20Villa%20Family%20Dining%20%26%20Pizzeria!5e0!3m2!1sen!2sus!4v1641164900337!5m2!1sen!2sus" style={{border:0}} allowfullscreen="" loading="lazy"></iframe>
     </div>
+    
   </div>
   );
 }

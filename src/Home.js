@@ -35,7 +35,7 @@ function Home() {
           <div className="h-full w-full flex place-items-center justify-center">
             <div className={pointerStyles} onClick={prevDiv}>{"<"}</div>
             <div className="md:px-20 px-10 pt-20 h-full w-full flex justify-center text-center place-items-center">
-            <h1 className="bg-white bg-opacity-70 p-3 rounded-full w-full font-fancy md:text-5xl text-3xl text-red-900">La Villa Family Dining & Pizzeria</h1>
+            <h1 className="bg-white bg-opacity-70 p-5 md:p-3 rounded-full w-full font-fancy md:text-5xl text-3xl text-red-900">La Villa Family Dining & Pizzeria</h1>
             </div>
             <div className={pointerStyles} onClick={nextDiv}>{">"}</div>
           </div>

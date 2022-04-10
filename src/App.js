@@ -10,7 +10,6 @@ import Catering from './Catering';
 import './App.css';
 
 function App() {
-  const test = <Home />
   return (
     <div className="App">
         <Header />
